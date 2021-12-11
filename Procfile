@@ -1,1 +1,1 @@
-worker: ./run.sh
+web: airflow initdb
