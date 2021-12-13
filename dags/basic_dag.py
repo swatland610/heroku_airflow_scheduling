@@ -10,9 +10,9 @@ from airflow.operators.bash import BashOperator
 # These args will get passed on to each operator
 # You can override them on a per-task basis during operator initialization
 default_args = {
-    'owner': 'airflow',
+    'owner': 'sean',
     'depends_on_past': False,
-    'email': ['airflow@example.com'],
+    'email': ['seanjwatland@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -32,7 +32,7 @@ default_args = {
     # 'trigger_rule': 'all_success'
 }
 with DAG(
-    'tutorial',
+    'basic_dag',
     default_args=default_args,
     description='A simple tutorial DAG',
     schedule_interval=timedelta(days=1),
