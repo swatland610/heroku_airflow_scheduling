@@ -43,7 +43,7 @@ with DAG(
     # t1, t2 and t3 are examples of tasks created by instantiating operators
     t1 = BashOperator(
         task_id='extract_budget_data',
-        bash_command='./run.sh',
+        bash_command='${AIRFLOW_HOME}/run.sh',
     )
 
     t1.doc_md = dedent(
