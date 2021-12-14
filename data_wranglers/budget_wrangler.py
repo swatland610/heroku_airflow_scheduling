@@ -96,8 +96,8 @@ class Wrangler:
 
     def set_col_labels_and_new_department_names():
         # Bring in two DFs created in the prior 2 functions
-        ten_year_budgets = Extract.portal_data()
-        departments_2021 = Extract.pull_department_names()
+        ten_year_budgets = Wrangler.portal_data()
+        departments_2021 = Wrangler.pull_department_names()
 
         # first, we are just going to rename the columns
         cols = {0:'fund_type',
