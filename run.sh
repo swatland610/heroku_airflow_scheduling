@@ -1,1 +1,1 @@
-python3 data_wranglers/budget_wrangler.py
+python3 ${AIRFLOW_HOME}/data_wranglers/budget_wrangler.py
