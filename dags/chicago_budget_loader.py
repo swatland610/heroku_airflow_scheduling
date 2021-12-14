@@ -9,7 +9,7 @@ from airflow.operators.bash import BashOperator
 # These args will get passed on to each operator
 # You can override them on a per-task basis during operator initialization
 default_args = {
-    'owner': 'sean',
+    'owner': 'airflow',
     'depends_on_past': False,
     'email': ['seanjwatland@gmail.com'],
     'email_on_failure': False,
@@ -43,7 +43,7 @@ with DAG(
     # t1, t2 and t3 are examples of tasks created by instantiating operators
     t1 = BashOperator(
         task_id='extract_budget_data',
-        bash_command='python3 data_wranglers/budget_wrangler.py',
+        bash_command='./run.sh',
     )
 
     t1.doc_md = dedent(

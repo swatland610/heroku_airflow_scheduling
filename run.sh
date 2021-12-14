@@ -1,1 +1,1 @@
-echo "Hello World!"
+python3 data_wranglers/budget_wrangler.py

@@ -178,5 +178,6 @@ class Wrangler:
 
 
 if __name__ == '__main__':
+    print('Woah! The Wrangler is wranglin...')
     ten_year_budgets = Wrangler().extract_budgets
-    print("Hey! This data has this many rows: {%d}".format(len(ten_year_budgets)))
+    print("Hey! This data has this many rows: {}".format(len(ten_year_budgets)))
